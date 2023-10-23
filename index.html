@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Raider Wrestling Alumni</title>
+</head>
+
+<body>
+<br><br>
+  <div class="nav">
+  <h1>Raider Wrestling Alumni</h1>
+    <div class="main-nav">
+      <a class="active" href="https://www.youtube.com/channel/UC0wdz0R00B0onWjkMk_jIig" target="_blank">YouTube</a>
+      <a href="news.html">News</a>
+      <a href="register.html">Register</a>
+      <a href="about.html">About</a>
+    </div>
+  </div>
+
+  <div class="links-nav">
+    <a class="links" href="pictures.html">Pictures</a>
+    <a class="links" href="videos.html">Videos</a>
+    <a class="links" href="highlights.html">Highlights</a>
+  </div>
+
+  <table class="table" width="65%">
+    <h3 class="schedule">2023-2024 Season Schedule</h3>
+    <tr>
+      <th class="th">Opponent</th>
+      <th class="th">Home/Away</th>
+      <th class="th">Time</th>
+      <th class="th">Date</th>
+    </tr>
+    <tr>
+      <td class="td">Heritage Hills</td>
+      <td class="td">Away</td>
+      <td class="td">10:00 a.m.</td>
+      <td class="td">Sat, Nov. 20th</td>
+    </tr>
+    <tr>
+      <td class="td">New Albany</td>
+      <td class="td">Home</td>
+      <td class="td">6:00 p.m.</td>
+      <td class="td">Tues, Nov. 30th</td>
+    </tr>
+    <tr>
+      <td class="td">Jeff Duals</td>
+      <td class="td">Away</td>
+      <td class="td">8:30 a.m.</td>
+      <td class="td">Sat, Dec. 4th</td>
+    </tr>
+    <tr>
+      <td class="td">PAC Duals</td>
+      <td class="td">Away</td>
+      <td class="td">6:00 p.m.</td>
+      <td class="td">Fri, Dec. 10th</td>
+    </tr>
+    <tr>
+      <td class="td">PAC Duals</td>
+      <td class="td">Away</td>
+      <td class="td">10:00 a.m.</td>
+      <td class="td">Sat, Dec. 11th</td>
+    </tr>
+    <tr>
+      <td class="td">Harrison 10-Way</td>
+      <td class="td">Away</td>
+      <td class="td">4:00 p.m.</td>
+      <td class="td">Fri, Dec. 17th</td>
+    </tr><tr>
+      <td class="td">Harrison 10-Way</td>
+      <td class="td">Away</td>
+      <td class="td">8:30 a.m.</td>
+      <td class="td">Sat, Dec. 18th</td>
+    </tr>
+  </table>
+
+  <div class="footer">
+    <p>President: Jared Steckler<br>
+    Treasurer: Jason Land<br>
+    Contact information inserted here.
+    </p>
+    <a href="https://www.facebook.com/RaiderWrestlingAlumni" target="_blank"><img src="img/fb.png" width="55" height="54"></a>
+    <a href="https://www.instagram.com/raider.wrestling.alumni/"target=_blank"><img src="img/insta.png" width="80" height="55"></a>
+    <a href="https://twitter.com/AlumniWrestling" target="_blank"><img src="img/x.png" width="50" height="53"></a>
+  </div>
+  
+  <script>
+    var myIndex = 0;
+    carousel();
+      
+    function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); // Change image every 4 seconds
+    }
+  </script>  
+ 
+  <script src="js/scripts.js"></script>
+</body>
+</html>

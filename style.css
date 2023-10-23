@@ -1,0 +1,387 @@
+body { 
+  background: linear-gradient(to right, red , black); /* Standard syntax */
+}
+
+
+.zone {
+  /*padding:30px 50px;*/
+  /*cursor:pointer;*/
+  color:#FFF;
+  font-size:2em;
+  border-radius:4px;
+  border:1px solid #bbb;
+  transition: all 0.3s linear;
+}
+
+.zone:hover {
+  -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+/***********************************************************************
+*  Nav Bar at the top of all pages
+**********************************************************************/
+
+.nav {
+  overflow: hidden;
+  background-color: black;
+  padding: 5px -4px;
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.main-nav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 1.85vw; 
+  line-height: 12px;
+  border-radius: 4px;
+}
+
+.nav a.logo {
+  font-size: 1.85vw;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.nav a.active:hover {
+  background-color: red;
+  color: black;
+}
+
+.nav a.active {
+  background-color: red;
+  color: white;
+}
+
+.main-nav {
+  float: right;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    font-size: 1.85vw;
+      padding: 0;
+  }
+}
+
+h1 {
+    color: white;
+    font-size: 4.85vw;
+}
+
+h3 {
+  color: white;
+  font-size: 3.85vw;
+}
+
+/***********************************************************************
+*  Table @ index.html
+**********************************************************************/
+table, th, td {
+  border:1px solid white;
+  text-align: center;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+}
+
+.th {
+  color: black;
+  font-size: 1.85vw;
+  background-color: white;
+}
+
+.td {
+  font-size: 1.85vw;
+}
+
+.schedule {
+  text-align: center;
+}
+
+/***********************************************************************
+ *  Cover
+ **********************************************************************/
+ .container {
+  height: 10vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/***********************************************************************
+*  Grid Panel
+**********************************************************************/
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1px;
+}
+
+.box {
+  background-color: #444;
+  padding: 15px;
+  margin: 15px;
+  text-align: center;
+  padding-bottom: 100%; /* 1:1 aspect ratio (square) */
+  border:2px solid red;
+  height: auto;
+  max-width: max-content;
+}
+
+.box img {
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.zone {
+  display: inline flex;
+  padding: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.box:hover {
+  -webkiy-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg); 
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+/***********************************************************************
+*  Slideshow container
+**********************************************************************/
+.slideshow-container {
+  margin-top: 150px;
+  margin-right: auto;
+  margin-left: auto;
+}
+  
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  margin: auto;
+  height: auto;
+  max-width: 70%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+  
+/* Caption text */
+.text {
+  color: white;
+  font-size: 1.85vw;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+  
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: .0001s;
+}
+  
+.year {
+  display: flex;
+  font-size: 3.85vw;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3px;
+  color: white;
+}
+
+/***********************************************************************
+*  Video Player
+**********************************************************************/
+.iframe {
+  display: flex;
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+/***********************************************************************
+*  News Page
+**********************************************************************/
+.iframe-news {
+  margin-left: auto;
+  margin-right: auto;
+  height: 1500px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .iframe-news {
+      font-size: 0.8em;
+      padding: 0;
+  }
+}
+
+/***********************************************************************
+*  Links Page
+**********************************************************************/
+.links {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+
+}
+
+.links-nav {
+  margin-top: 140px;
+  text-align: left;
+}
+
+.links-nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+/***********************************************************************
+*  Picture Page
+**********************************************************************/
+.picture-page {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
+
+.pics {
+  padding: 10px;
+  text-decoration: none;
+  background-color: gray;
+  color: white;
+  font-size: 1.85vw;
+}
+
+.pics a:hover {
+  background-color: black;
+  color: white;
+}
+
+/***********************************************************************
+*  Videos Page
+**********************************************************************/
+.videos-page {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  font-size: 1.85vw;
+}
+
+.videos {
+  padding: 10px;
+  text-decoration: none;
+  background-color: gray;
+  color: white;
+}
+
+.videos a:hover {
+  background-color: black;
+  color: white;
+}
+
+/***********************************************************************
+*  Highlights Page
+**********************************************************************/
+
+
+/***********************************************************************
+*  Register Page
+**********************************************************************/
+.forms {
+  text-align: left;
+  max-width: 330px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  border-style: double;
+  font-size: 2.05vw;
+}
+
+.inputs {
+  text-align: center;
+}
+
+/***********************************************************************
+*  About Page
+**********************************************************************/
+.mission-box {
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  border-style: solid;
+  border-color: rgb(68, 17, 17);
+  background-color: rgb(110, 55, 55);
+}
+
+.mission {
+  text-align: center;
+  font-size: 4.85vw;
+}
+
+.mission-statement {
+ font-size: 2.25vw;
+ color: white;
+ text-align: center;
+}
+
+.charity-statement {
+  text-align: center;
+  color: silver;
+  font-size: 2.55vw;
+}
+/***********************************************************************
+*  Footer
+**********************************************************************/
+.footer {
+  margin-top: 50px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1px;
+  color: white;
+  font-size: 2.85vw;
+}  
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.links {
+  text-align: center;
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 15px;
+}
+
